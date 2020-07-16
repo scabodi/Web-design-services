@@ -1,0 +1,209 @@
+@media screen{
+
+    * {
+        box-sizing: border-box;
+    }
+    html, body {
+        font-size-adjust: inherit;
+        font-size: 100%;
+        line-height: 1.2;
+        height: 98%;
+        font-family: Verdana, Helvetica, sans-serif;
+        background-color: rgb(255, 222, 242);
+        min-width: 700px;
+        min-height: 400px;
+    }
+    head {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        min-width: 700px;
+    }
+    #header {
+        float: none;
+        clear: both;
+        padding: 0;
+        height: 5em;
+        min-height: 2em;
+        text-align: center;
+        font-family: Verdana, Helvetica, sans-serif;
+    }
+    #info_utente {
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding-right: 2%;
+        min-width: 8em;
+        min-height: 5em;
+        margin-left: 35em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        padding: 0;
+        color: purple;
+    }
+    #h1{
+        padding: 0;
+    }
+    #h2 {
+        padding-left: 2em;
+        padding-top: 0;
+        margin: 2px;
+        min-height: 5em;
+    }
+    #wrapper{
+        min-height:100%;
+        position:relative;
+        margin: 0;
+    }
+    #navigation {
+        float: left;
+        clear: left;
+        min-width: 20px;
+        min-height: 30px;
+        margin: 2px;
+        padding-left: 2em;
+        padding-right: 1%;
+    }
+    #navigation ul {
+        list-style: none;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    #contenuto {
+        padding-left: 2%;
+        margin-left: 11em;
+        min-width: 20em;
+        min-height: 50%;
+        position: relative;
+
+    }
+    #errore {
+        margin: 1ex;
+        padding: 1em;
+        color: #bf0000;
+        text-decoration: #bf0000;
+        font-weight: bold;
+    }
+    #footer {
+
+        font-family: "Times New Roman", Georgia, serif;
+        font-style: italic;
+        font-size: 1em;
+        position: absolute;
+        clear: both;
+        bottom: 0;
+        width: 99%;
+        padding-top: 0.3em;
+        margin-bottom: 0.2em; /
+        min-width: 30em;
+        min-height: 2em;
+        padding-left: 1em;
+        z-index: 10;
+    }
+    a:link {
+        color: blue;
+        text-decoration: none;
+        border: none;
+    }
+    a:visited {
+        color: purple;
+    }
+    a:hover {
+        background-color: yellow;
+        text-decoration: underline;
+    }
+    a:active {
+        color: red;
+        text-decoration: underline;
+    }
+    p {
+
+        font-family: Verdana, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+    p.err {
+        color: #bf0000;
+        text-decoration: #bf0000;
+        font-weight: bold;
+    }
+    p.benvenuto {
+        color: blue;
+        font-weight: bold;
+
+    }
+    .disabled {
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+    th, td {
+        border: 1px solid Black;
+        padding: 1ex;
+
+    }
+    th {
+        text-align: center;
+    }
+    td {
+        text-align: left;
+    }
+    .grassetto{
+        font-weight: bold;
+    }
+    .commento_login{
+        clear: both;
+    }
+
+}
+@media print {
+
+    body {
+        color: black;
+        background: white;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12pt;
+    }
+
+    #navigation, #info_utente, a{
+        display: none;
+    }
+    img{
+       display: none;
+    }
+    h1 {
+        text-align:left;
+        font-size: 15pt;
+        text-decoration: underline ;
+
+    }
+    h2 {
+        text-align:left;
+        font-size:13pt;
+    }
+    h3 {
+        text-align:left;
+        font-size: 11pt;
+    }
+
+    table, th, td, tr {
+        border-collapse:collapse;
+        border: 0.1em solid black;
+        text-align: center;
+        margin: 5mm;
+    }
+
+    th, td{
+        padding: 10mm;
+        text-align:center;
+    }
+
+    #footer{
+        clear: both;
+        border-top: thin dotted black;
+        text-align: left;
+        position: fixed;
+        bottom: 10mm;
+    }
+    p.solo_screen{
+        display: none;
+    }
+}
